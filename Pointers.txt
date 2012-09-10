@@ -1,0 +1,35 @@
+new operator
+	allocates anonymous
+		variable, returns address
+		of anon. variable
+
+	anything allocated w/
+		new needs to be given back
+		w/ delete
+
+
+memory diagram
+*ptr -> ? -> d
+? = 15
+d = 16
+
+
+arrays
+staticly allocated array
+	int numbers[SIZE] = {10, 20, 30};
+
+dynamically allocated array
+	int * a = new int[SIZE];
+	delete[] a;
+
+
+int * tmpPtr = a1;
+a1 = a2;
+a2 = tmpPtr;
+int tmp = size1;
+size1 = size2;
+size2 = tmp;
+
+
+for (int i=0; i<numRows; i++)
+	nums[i] = new int[numCols];
