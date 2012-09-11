@@ -51,6 +51,8 @@ int main(int argc, char const *argv[])
 	cout << endl;
 	cout << "The minIdx is " << *minIdx << endl;
 	cout << "The maxIdx is " << *maxIdx << endl;
-
+	delete a;
+	delete minIdx;
+	delete maxIdx;
 	return 0;
 }

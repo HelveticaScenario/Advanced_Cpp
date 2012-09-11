@@ -17,6 +17,8 @@ int main(int argc, char const *argv[])
 	int * ptr = NULL;
 	int ** ptrptr = &ptr;
 	readSizeAndAllocateArray(ptrptr, size);
+	delete ptr;
+	delete size;
 	return 0;
 }
 
