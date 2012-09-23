@@ -6,29 +6,16 @@ using namespace std;
 	private:
 		 int _rows;
 		 int _cols;
-		 int _maxTurns;
+		 int _maxTurns; //gets generated automatically, _rows*_cols
 		 int _numPlayers;
-		char * _players;
+		char * _players; //stores the symbol of each player
 		 int _howManyToWin;
-		bool _rulesSet;
+		bool _rulesSet; //cant play unless this is true
 
-		char ** _board;
-
-		
-		
-	public:
-		TicTacToe();
-		TicTacToe( int rows,  int cols,  int numPlayers, char* players,  int toWin);
-		TicTacToe( int sideLength,  int numPlayers, char* players,  int toWin);
-		~TicTacToe();		
-		void play();		
-		bool setRules();
-		bool setRules( int rows,  int cols,  int numPlayers, char* players,  int toWin);
-		
+		char ** _board; 
 
 		bool isWinnable();
-		bool isBoring( int smaller,  int larger);
-		
+		bool isBoring( int smaller,  int larger);		
 		bool createBoard();
 		void returnRules( int & rows,  int & cols,  int & numPlayers, char* & players,  int & toWin);
 		void printVals() const;
@@ -47,5 +34,14 @@ using namespace std;
 		void setPlayers(string message);
 		bool makeMove(int turn);
 		bool isWin(int x, int y);
-		// int getInt(string message,  int defaultChoice);
+
+	public:
+		TicTacToe();
+		TicTacToe( int rows,  int cols,  int numPlayers, char* players,  int toWin);
+		TicTacToe( int sideLength,  int numPlayers, char* players,  int toWin);
+		~TicTacToe();		
+		void play();		
+		bool setRules();
+		bool setRules( int rows,  int cols,  int numPlayers, char* players,  int toWin);
+
 	};

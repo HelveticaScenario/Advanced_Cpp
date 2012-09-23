@@ -27,6 +27,12 @@ TicTacToe::TicTacToe( int sideLength,  int numPlayers, char* players,  int howMa
 
 TicTacToe::~TicTacToe(){
 	delete _players;
+	for (int i = 0; i < _cols; ++i)
+	{
+		delete[] _board[i];
+	}
+	delete[] _board;
+
 
 }
 
@@ -290,7 +296,7 @@ void TicTacToe::displayBoard(){
 		cout << j;
 		for (int i = 0; i < _cols; ++i)
 		{
-			cout << " " << _board[0][j] << " ";
+			cout << " " << _board[i][j] << " ";
 			if (i<(_cols-1))
 			{
 				cout << "|";
@@ -314,12 +320,17 @@ void TicTacToe::displayBoard(){
 }
 
 bool TicTacToe::makeMove(int turn){
-	cout << _players[turn % _numPlayers] << "'s turn. Where to? : " << endl;
+	cout << _players[turn % _numPlayers] << "'s turn. Where to? ENTER YOUR HORIZONAL VALUE, THEN A SPACE,\nTHEN YOUR VERTICAL VALUE. ONLY NUMBERS : ";
 	int x, y;
 	cin >> x >> y;
 	if (cin.fail()){
 		cin.clear();
 		cin.ignore(256);
+		return makeMove(turn);
+	}
+	else if (x < 0 || x >= _cols || y < 0 || y >= _rows)
+	{
+		cout << "Invalid move." << endl;
 		return makeMove(turn);
 	}
 	else if (_board[x][y] != ' ')
@@ -335,7 +346,8 @@ bool TicTacToe::isWin(int x, int y){
 	int inRow = 1;
 	int lookX, lookY;
 
-	for (lookX = x; lookX >=0 ; --lookX)
+	//checks horizontally
+	for (lookX = x-1; lookX >=0 ; --lookX)
 	{
 		if (_board[lookX][y] != _board[x][y])
 		{
@@ -346,6 +358,115 @@ bool TicTacToe::isWin(int x, int y){
 			return true;
 		}
 	}
+	for (lookX = x+1; lookX < _cols; ++lookX)
+	{
+		if (_board[lookX][y] != _board[x][y])
+		{
+			break;
+		}
+		else if (++inRow >= _howManyToWin)
+		{
+			return true;
+		}
+	}
+
+	//checks vertically
+	inRow = 1;
+	for (lookY = y-1; lookY >=0 ; --lookY)
+	{
+		if (_board[x][lookY] != _board[x][y])
+		{
+			break;
+		}
+		else if (++inRow >= _howManyToWin)
+		{
+			return true;
+		}
+	}
+	for (lookY = y+1; lookY < _rows; ++lookY)
+	{
+		if (_board[x][lookY] != _board[x][y])
+		{
+			break;
+		}
+		else if (++inRow >= _howManyToWin)
+		{
+			return true;
+		}
+	}
+
+	// checks diagonally '\' with top left, bottom right
+	inRow = 1;
+	if (x > 0 && y > 0)
+	{
+		lookX = x-1;
+		lookY = y-1;
+		for (; lookY >= 0 && lookX >= 0 ; --lookY, --lookX)
+		{
+			if (_board[lookX][lookY] != _board[x][y])
+			{
+				break;
+			}
+			else if (++inRow >= _howManyToWin)
+			{
+				return true;
+			}
+		}
+	}
+	if (x < (_cols-1) && y < (_rows-1))
+	{
+		lookX = x+1;
+		lookY = y+1;
+		for (; lookY < _cols && lookX < _rows ; ++lookY, ++lookX)
+		{
+			if (_board[lookX][lookY] != _board[x][y])
+			{
+				break;
+			}
+			else if (++inRow >= _howManyToWin)
+			{
+				return true;
+			}
+		}
+	}
+
+	//checks diagonally '/' with bottom left, top right
+	inRow = 1;
+	if (x > 0 && y < (_rows-1))
+	{
+		lookX = x-1;
+		lookY = y+1;
+		for (; lookY >= 0 && lookX < _cols ; ++lookY, --lookX)
+		{
+			if (_board[lookX][lookY] != _board[x][y])
+			{
+				break;
+			}
+			else if (++inRow >= _howManyToWin)
+			{
+				return true;
+			}
+		}
+	}
+	if (x < (_cols-1) && y > 0)
+	{
+		lookX = x+1;
+		lookY = y-1;
+		for (; lookY < _rows && lookX >=0 ; --lookY, ++lookX)
+		{
+			if (_board[lookX][lookY] != _board[x][y])
+			{
+				break;
+			}
+			else if (++inRow >= _howManyToWin)
+			{
+				return true;
+			}
+		}
+	}
+
+
+	return false;
 }
 
 void TicTacToe::play(){	
@@ -354,15 +475,18 @@ void TicTacToe::play(){
 		cout << "Game rules not set." << endl;
 		return;
 	}
-	_maxTurns = 1;
+	// _maxTurns = 1;
 	for ( int i = 0; i < _maxTurns; ++i)
 	{
 		displayBoard();
 		if(makeMove(i)){
+			displayBoard();
 			cout << "player " << _players[i % _numPlayers] << " wins." << endl;
 			system("read -p 'Press [Enter] key to continue...'");
-		}
-
-		
+			return;
+		}	
 	}
+	cout << "Nobody wins." << endl;
+	system("read -p 'Press [Enter] key to continue...'");
+	return;
 }
