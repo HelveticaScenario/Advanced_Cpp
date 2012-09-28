@@ -1,4 +1,4 @@
-#include "TicTacToe.cpp"
+#include "TicTacToe.h"
 
 //I tried to make it too big and wasnt able to complete it in the time frame.
 

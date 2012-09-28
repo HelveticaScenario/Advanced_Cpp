@@ -1,0 +1,431 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"look",
+				"lookX	int"
+			],
+			[
+				"p",
+				"play()	void"
+			],
+			[
+				"getY",
+				"getYesOrNo(string *message)	bool"
+			],
+			[
+				"getYe",
+				"getYesOrNo(string message, bool defaultChoice)	bool"
+			],
+			[
+				"getint",
+				"getInt(string message)	unsigned int"
+			],
+			[
+				"mesage",
+				"message	string"
+			],
+			[
+				"pla",
+				"_players	char *"
+			],
+			[
+				"def",
+				"defaultChoice	bool"
+			],
+			[
+				"print",
+				"printVals() const	void"
+			],
+			[
+				"num",
+				"numPlayers	int"
+			],
+			[
+				"setRules",
+				"setRules(unsigned int rows, unsigned int cols, unsigned int numPlayers, char *players, unsigned int toWin)	void"
+			],
+			[
+				"pri",
+				"printVals() const	void"
+			],
+			[
+				"get",
+				"getYesOrNo(bool defaultChoice)	bool"
+			],
+			[
+				"read",
+				"readSizeAndAllocateArray(int **ptr, int *size)	void"
+			],
+			[
+				"ma",
+				"main	main()"
+			],
+			[
+				"sid",
+				"sideSurfArea	double *"
+			],
+			[
+				"side",
+				"sideSurfArea	double &"
+			],
+			[
+				"g",
+				"get_unit_x()	float"
+			],
+			[
+				"ge",
+				"get_mag()	float"
+			],
+			[
+				"set_",
+				"set_x_y(float, float)	void"
+			],
+			[
+				"ev",
+				"eval_unit()	void"
+			],
+			[
+				"se",
+				"set_unit_x(float)	void"
+			],
+			[
+				"vec",
+				"vec2	class"
+			],
+			[
+				"set",
+				"set_mag(float)	void"
+			],
+			[
+				"pow",
+				"powf(float, float)	float"
+			],
+			[
+				"_y",
+				"_y	float"
+			],
+			[
+				"cust",
+				"custom_vector	struct"
+			],
+			[
+				"SDL_GetV",
+				"SDL_GetVideoSurface()	SDL_Surface *"
+			],
+			[
+				"main",
+				"main_loop()	void"
+			],
+			[
+				"B",
+				"BytesPerPixel	Uint8"
+			],
+			[
+				"Uin",
+				"Uint8	typedef"
+			],
+			[
+				"U",
+				"Uint8	typedef"
+			],
+			[
+				"graphi",
+				"love.graphics.getCaption"
+			],
+			[
+				"lovemousese",
+				"love.mouse.setVisible"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/C++/C++.sublime-build",
+	"command_palette":
+	{
+		"height": 335.0,
+		"selected_items":
+		[
+			[
+				"gdb",
+				"SublimeGDB: Stop Debugging"
+			],
+			[
+				"gd",
+				"SublimeGDB: Stop Debugging"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Discover Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"term",
+				"Preferences: Terminal Key Bindings – Default"
+			],
+			[
+				"d",
+				"Package Control: Disable Package"
+			],
+			[
+				"di",
+				"Package Control: Disable Package"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"clan",
+				"Preferences: SublimeClang Settings – Default"
+			],
+			[
+				"sublime",
+				"Preferences: SublimeClang Settings – Default"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/contrarian/github/local/Advanced_Cpp/Lab2/TicTacToe.h",
+		"/Users/contrarian/github/local/Advanced_Cpp/Lab2/TicTacToe.cpp",
+		"/Users/contrarian/github/local/Advanced_Cpp/Lab2/TicTacToeDriver.cpp",
+		"/Users/contrarian/github/local/Advanced_Cpp/Lab2/Lab2.sublime-project",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/SublimeGDB/Readme.creole",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/SublimeGDB/SublimeGDB.sublime-settings",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/SublimeGDB/Default.sublime-keymap",
+		"/Users/contrarian/github/local/Advanced_Cpp/Lab2/TicTacToeExperiment.h",
+		"/Users/contrarian/github/local/Advanced_Cpp/Lab2/TicTacToeExperiment.cpp",
+		"/Users/contrarian/github/local/Advanced_C++/Lab1Problem1a.cpp",
+		"/Users/contrarian/github/local/Programming_Fundamentals/numeric_operators.txt",
+		"/Users/contrarian/github/local/Programming_Fundamentals/Lab_1.txt",
+		"/Users/contrarian/github/local/Programming_Fundamentals/numeric_operators",
+		"/Users/contrarian/github/local/Programming_Fundamentals/input.txt",
+		"/Users/contrarian/github/local/Daniel-Lewis-Learning-Directory/C++/LearnC++/src/vector_driver.cpp",
+		"/Users/contrarian/github/local/Daniel-Lewis-Learning-Directory/C++/LearnC++/src/vector.cpp",
+		"/Users/contrarian/github/local/Daniel-Lewis-Learning-Directory/C++/LearnC++/src/vector.h",
+		"/Users/contrarian/github/local/Daniel-Lewis-Learning-Directory/C++/LearnC++/src/vector_driver",
+		"/Users/contrarian/github/local/Daniel-Lewis-Learning-Directory/C++/LearnC++/src/makefile",
+		"/Users/contrarian/github/local/Daniel-Lewis-Learning-Directory/C++/LearnC++/src/vector_struct.h",
+		"/Users/contrarian/github/local/Daniel-Lewis-Learning-Directory/C++/LearnC++/src/test.h",
+		"/Users/contrarian/github/local/Daniel-Lewis-Learning-Directory/C++/LearnC++/src/test.cpp",
+		"/Users/contrarian/github/local/Engine_Exploration/Allegro/src/makefile",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/contrarian/github/local/Programming_Fundamentals/Variables.txt",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/Theme - Soda/README.md",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/contrarian/Downloads/Allegro_Wrapper_0.0/aw.h",
+		"/Users/contrarian/github/local/Engine_Exploration/Allegro/src/allegro_pkgconf",
+		"/Users/contrarian/github/local/Daniel-Lewis-Learning-Directory/lua/OFFTHECUFF.lua",
+		"/Users/contrarian/github/local/Engine_Exploration/The_Love_of_Life_V2.1/conf.lua",
+		"/Users/contrarian/Downloads/complex.lua",
+		"/Users/contrarian/github/local/Engine_Exploration/LOVEdev/src/libs/lovekit/main.lua",
+		"/Users/contrarian/MoonScript.tmbundle/README.md",
+		"/Users/contrarian/github/local/Engine_Exploration/The_Love_of_Life/gameOfLifeFree.lua",
+		"/Users/contrarian/github/local/Engine_Exploration/The_Love_of_Life/main.lua",
+		"/Users/contrarian/github/local/Headspring/src/FizzBuzz.lua",
+		"/Users/contrarian/github/local/Daniel-Lewis-Learning-Directory/lua/table_replace_test.lua",
+		"/Users/contrarian/Downloads/index.php",
+		"/Users/contrarian/Downloads/LUBE.lua",
+		"/Users/contrarian/Downloads/Example_Game 2/entities.lua",
+		"/Users/contrarian/Downloads/shader mouse test1/conf.lua",
+		"/Users/contrarian/Downloads/shader mouse test1/main.lua",
+		"/Users/contrarian/github/local/ROVLike/Dan's Engine Exploration/mari0-source/mari0_1.6/mario.lua",
+		"/Users/contrarian/github/local/lua_missions/src/environments.lua",
+		"/Users/contrarian/Downloads/sand shader/main.lua",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/User/LuaJIT.sublime-build",
+		"/Users/contrarian/github/local/ROVLike/Dan's Engine Exploration/plainLua",
+		"/Users/contrarian/Downloads/01-DisplayingABitmap/Source/DisplayingABitmap.hx",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/User/Lua.sublime-build",
+		"/Users/contrarian/github/local/ROVLike/Love/main.lua",
+		"/Users/contrarian/github/local/ROVLike/Love/HelloWorld.lua",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/User/Love2d.sublime-build",
+		"/Users/contrarian/Desktop/pygame/pygame/src/scale_mmx64.c",
+		"/Users/contrarian/Documents/C-Programing/C++/fileManip.cpp",
+		"/Users/contrarian/Documents/orx-1.3rc0/tutorial/bin/01_Object.ini",
+		"/Users/contrarian/Documents/orx-1.3rc0/tutorial/bin/mac/orx",
+		"/Users/contrarian/Documents/C-Programing/C++/fileManip",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/User/SublimeClang.sublime-settings",
+		"/Users/contrarian/Library/Application Support/Sublime Text 2/Packages/SublimeClang/SublimeClang.sublime-settings",
+		"/Users/contrarian/Downloads/prideout-pez-a6ed5ad/untitled.sublime-project"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"unsigned",
+			"\");\n",
+			"unsigned",
+			"void",
+			"ToWin",
+			"toWin",
+			"_toWin",
+			");\n",
+			"prompt",
+			"getYesOrNo",
+			"_toWin",
+			"side",
+			"cust_vector"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sideLength",
+			"vec2"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.clang":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 135.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 192.0,
+	"status_bar_visible": true
+}

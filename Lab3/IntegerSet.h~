@@ -1,0 +1,12 @@
+#include <iostream>
+#include <vector>
+
+class IntegerSet{
+ public:
+  IntegerSet();
+  ~IntegerSet();
+  
+ private:
+  vector<bool> set[101];
+
+}

@@ -1,0 +1,15 @@
+#include "IntegerSet.h"
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+IntegerSet::IntegerSet(){
+  vector<bool> _set(101,false);
+}
+
+void IntegerSet::printSet(){
+  for(int i = 0; i < 101; i++){
+    cout << _set.at(5) << endl;
+  }
+}
